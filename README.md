@@ -22,3 +22,28 @@ class HelloWorld {
     }
 }
 ```
+##### Problem 2:
+
+```java
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean flag = true;
+        int input, sum = 0, inputCount = 0;
+        
+        
+        while(flag) {
+            input = scanner.nextInt();
+            if (input == -1) { flag = false; break; }
+            inputCount++;
+            sum += input;
+        }
+        
+        System.out.println("You have been gifted an average of: " + sum / inputCount + " per attendee of your wedding.");
+        
+    }
+   
+}
+```
